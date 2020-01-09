@@ -25,6 +25,7 @@ const SignupScreen = ({ navigation }) => {
         <Input
           autoCapitalize="none"
           autoCorrect={false}
+          secureTextEntry
           label="Password"
           value={password}
           onChangeText={(newPassword) => setPassword(newPassword)}
