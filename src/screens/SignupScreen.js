@@ -32,7 +32,10 @@ const SignupScreen = ({ navigation }) => {
         />
       </Spacer>
       <Spacer>
-        <Button title="Sign Up" />
+        <Button
+          title="Sign Up"
+          onPress={() => console.log(email, password)}
+        />
       </Spacer>
     </View>
   );
