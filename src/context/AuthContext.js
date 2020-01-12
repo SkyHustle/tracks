@@ -14,17 +14,15 @@ const authReducer = (state, action) => {
   }
 };
 
-const signup = (dispatch) => {
-  return async ({ email, password }) => {
-    try {
-      const response = await trackerApi.post('/signup', { email, password });
-      await AsyncStorage.setItem('token', response.data.token);
-      dispatch({ type: 'signup', payload: response.data.token })
-    } catch (err) {
-      // We always call dispatch every time we want to update our state
-      dispatch({ type: 'add_error', payload: 'Something went wrong with sign up' })
-    }
-  };
+const signup = (dispatch) => async ({ email, password }) => {
+  try {
+    const response = await trackerApi.post('/signup', { email, password });
+    await AsyncStorage.setItem('token', response.data.token);
+    dispatch({ type: 'signup', payload: response.data.token })
+  } catch (err) {
+    // We always call dispatch every time we want to update our state
+    dispatch({ type: 'add_error', payload: 'Something went wrong with sign up' })
+  }
 };
 
 const signin = (dispatch) => {
