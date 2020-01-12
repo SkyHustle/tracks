@@ -58,7 +58,8 @@ const styles = StyleSheet.create({
   },
   errorMessage: {
     fontSize: 16,
-    color: 'red'
+    color: 'red',
+    margin: 10
   }
 });
 
