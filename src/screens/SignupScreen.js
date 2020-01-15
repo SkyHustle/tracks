@@ -44,4 +44,4 @@ const styles = StyleSheet.create({
 
 export default SignupScreen;
 
-// <>This is called a fragment</>
+// <>This is called a fragment </>
