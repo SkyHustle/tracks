@@ -18,6 +18,12 @@ const Map = () => {
         latitudeDelta: 0.01,
         longitudeDelta: 0.01
       }}
+      // if you don't want to see the map move remove this region prop
+      region={{
+        ...currentLocation.coords,
+        latitudeDelta: 0.01,
+        longitudeDelta: 0.01
+      }}
     >
     </MapView>
   );

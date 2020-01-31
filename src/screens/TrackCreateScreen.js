@@ -1,5 +1,5 @@
 // Once every second we are artificially triggering a change in location
-// import '../_mockLocation';
+import '../_mockLocation';
 import React, { useEffect, useState, useContext } from 'react';
 import { StyleSheet } from 'react-native';
 import { Text } from 'react-native-elements';
